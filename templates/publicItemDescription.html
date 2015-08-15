@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<link rel=stylesheet type =text/css href="{{url_for('static', filename='styles.css')}}"
+	</head>
+	<body>
+		<div id = "bar">
+			<div id = "header">
+				<h1><a href = '{{url_for('categoryHomePage')}}'>Catalog App</a></h1>
+			</div>
+			<div id = "button">
+				{% if 'username' in login_session %}
+					<a href='{{url_for('gdisconnect')}}' class="button">Logout</a>
+				{% else %}
+					<a href='{{url_for('showLogin')}}' class="button">Login</a>
+				{% endif %}
+			</div>
+		</div>
+		<div id = "center-box">
+			<h2>{{item.title}}</h2>
+			<p>{{item.description}}</p>
+		</div>
+	</body>
+</html>

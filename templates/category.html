@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<link rel=stylesheet type =text/css href="{{url_for('static', filename='styles.css')}}"
+	</head>
+	<body>
+		<div id = "bar">
+			<div id = "header">
+				<h1><a href = '{{url_for('categoryHomePage')}}'>Catalog App</a></h1>
+			</div>
+			<div id = "button">
+				<a href='{{url_for('gdisconnect')}}' class="button">Logout</a>
+			</div>
+		</div>
+		{% with messages = get_flashed_messages() %}
+      		{% if messages %}
+      			{% for message in messages %}
+					<div id = "bar2">
+						<div id = "header2">
+							<h3>{{message}}</h3>
+						</div>
+					</div>
+	        	{% endfor %}
+        	{% endif %}
+    	{% endwith %}
+		<div id = "categories">
+			<div id = "left-box">
+				<h2>Categories</h2>
+				{% for c in categories %}
+					<a href = '{{url_for('categoryItems', cat_id = c.id)}}'>{{c.name}}</a>
+					</br></br>
+				{% endfor %}
+			</div>
+			<div id = "right-box">
+				</br>
+				<a href = '{{url_for('addItem')}}'>Add Item</a>
+				</br></br>
+				<a href = '{{url_for('addCategory')}}'>Add Category</a>
+				</br></br>	
+			</div>
+		</div>
+	</body>
+</html>

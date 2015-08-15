@@ -1,0 +1,92 @@
+#bar {
+	background-color: #000066;
+	width: 100%; 
+	position: fixed; 
+	top: 0px; 
+	left: 0px; 	
+}
+#header h1 a{
+	width:10%;
+	color: #FFFFFF; 
+	padding-left: 25%; 
+	font-family: 'Arial';
+	float:left;
+	text-decoration:none;
+	margin-bottom: 10px;
+}
+#button {
+	float: right;
+	font-family: 'Arial';
+	padding-right:25%;
+}
+#button a.button {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 30px;
+}
+#bar2 {
+	background-color: #7FFFD4;
+	width: 100%;
+	position: fixed;
+	margin-top: 68px;
+	left:0px;
+	top: 0px;
+	height: 20px;
+}
+#bar2 h3 {
+	font-family: 'Arial';
+	text-align: center;
+	height: 20px;
+	margin-top: 0px;
+}
+#categories {	
+	width: 50%;
+	margin: auto; 
+	margin-top: 150px;
+	text-align:center;
+	min-height:100px;
+    overflow: hidden;
+}
+#categories h2 {
+	font-family: 'Arial';
+	color: #000066;
+}
+#categories a {
+	color: #FF3300;
+	text-decoration: none;
+}
+#left-box {
+    float:left;
+    width: 45%;
+    background: white;
+}
+#right-box {
+    float:right;
+    width: 45%;
+    background: white;
+}
+#center-box {
+	width: 50%; 
+	min-height:100px;
+	overflow:hidden;
+    margin:auto;
+	margin-top: 150px;
+	background:white;
+	padding-left:1.5%;
+	padding-bottom: 1%;
+}
+#center-box h2 {
+	font-family: 'Arial';
+	color: #000066;
+}
+#center-box p {
+	font-family: 'Arial';
+	font-size: 15px;
+}
+#center-box a {
+	text-decoration: none;
+	color: #FF3300;
+}
+body { 
+	background-color: #b0c4de; 
+}

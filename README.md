@@ -11,10 +11,11 @@ This app is run on:
 3. `sqlalchemy: 1.0`
 
 If your version of flask is not up to date, run the following in the command line:
+
 	```
-		sudo pip install werkzeug==0.8.3
-		sudo pip install flask==0.9
-		sudo pip install Flask-Login==0.1.3
+	sudo pip install werkzeug==0.8.3
+	sudo pip install flask==0.9
+	sudo pip install Flask-Login==0.1.3
 	```
 
 This will get rid of the error: OAuth2Credentials object is not JSON serializable.
